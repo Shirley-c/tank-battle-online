@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>双人在线坦克大战 MVP</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="panel">
+      <h1>双人在线坦克大战 MVP</h1>
+      <div class="controls">
+        <input id="nickname" placeholder="昵称（可选）" maxlength="16" />
+        <input id="roomId" placeholder="房间号，如 ROOM1" maxlength="20" />
+        <button id="createBtn">创建房间</button>
+        <button id="joinBtn">加入房间</button>
+        <button id="restartBtn">再来一局</button>
+      </div>
+      <div id="tips">
+        操作：W/S 前后移动，A/D 旋转，J 开火。<br />
+        规则：每发子弹 -20 HP，先把对方血量打到 0 获胜。
+      </div>
+      <div id="status">尚未加入房间</div>
+    </div>
+
+    <canvas id="game" width="1000" height="700"></canvas>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

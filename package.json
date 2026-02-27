@@ -1,0 +1,21 @@
+{
+  "name": "tank-battle-online",
+  "version": "1.0.0",
+  "description": "Browser 2-player online tank battle MVP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "tank",
+    "socket.io",
+    "canvas",
+    "multiplayer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.8.1"
+  }
+}
