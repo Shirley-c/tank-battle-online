@@ -66,6 +66,22 @@ ipconfig getifaddr en0
 
 ---
 
+## 广域网联机（免费 Render）
+
+仓库已包含 `render.yaml`，可直接部署到 Render 免费实例：
+
+1. 打开 <https://render.com> 并登录
+2. New + → **Blueprint**
+3. 选择本仓库 `Shirley-c/tank-battle-online`
+4. 点 **Apply** 开始部署（约 1~3 分钟）
+5. 部署完成后会得到公网地址（如 `https://tank-battle-online.onrender.com`）
+
+之后两位玩家都用这个公网地址访问并加入同房间，即可广域网联机。
+
+> 说明：免费实例空闲会休眠，首次唤醒可能需要几十秒。
+
+---
+
 ## 项目结构
 
 ```text

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tank-battle-online
+    env: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
